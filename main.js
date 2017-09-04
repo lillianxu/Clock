@@ -35,7 +35,7 @@ onload=function () {
         if (t-tt>=2000){
             tt=t;
             clockbackground.style.background="url(img/slide"+pindex+".jpg)";
-            clockbackground.style.backgroundSize="400px 400px"
+            clockbackground.style.backgroundSize="350px 350px"
             pindex=(pindex+1)%3;
         }
         draw.clearRect(0,0,cw*2,ch*2);
