@@ -1,0 +1,45 @@
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+.clearfix {zoom:1;}
+.clearfix:after{
+    content:'.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+.clock{
+   margin: 20px auto auto 25% ;
+}
+
+.number-section{
+    position: absolute;
+    top:120px;
+    left: 210px;
+    width: 200px;
+    height:50px;
+    margin: 50px auto auto 25% ;
+}
+.display-number {
+     position: relative;
+    display: inline-flex;
+    list-style-type: none;
+  }
+.time{
+    margin-left: 20px;
+}
+        
+img {
+    width: 20px;
+    height: 20px;
+    transform: rotateY(0deg);transition: all  0.5s ease  ;
+}
+
+.sign{
+    color: red;
+}
+
