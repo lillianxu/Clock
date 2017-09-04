@@ -13,7 +13,7 @@
 }
 
 .clock{
-   margin: 80px auto auto 25% ;
+   margin: 80px 25% auto 25% ;
 }
 
 .number-section{
@@ -22,7 +22,7 @@
     left: 100px;
     width: 200px;
     height:50px;
-    margin: 50px auto auto 25% ;
+    margin: 50px 25% auto 25% ;
 }
 .display-number {
      position: relative;
