@@ -43,3 +43,11 @@ img {
     color: red;
 }
 
+ #clockbackground {
+     width: 600px;
+     height: 600px;
+     border-radius: 300px;
+     border: solid 1px black;
+     background: url('img/slide1.jpg') no-repeat red ;
+     background-size: 600px 600px; 
+}

@@ -1,12 +1,15 @@
 onload=function () {
     var imgs=document.getElementsByTagName("img");
     var can=document.getElementById("can");
+    var clockbackground=document.getElementById("clockbackground");//slide
     var cw=can.offsetWidth/2;
     var ch=can.offsetHeight/2;
     var draw=can.getContext("2d");
     var pic=new Image();
     var parts={},index=0;
     var tempstr="00000000000000";////////////////////////////
+    var tt=0;
+    var pindex=0;
     pic.src="img/aa.png";
     pic.onload=function () {
 
@@ -28,7 +31,13 @@ onload=function () {
         }
 
         }
-        tempstr=str;/////////////////////////
+        tempstr=str;//slide
+        if (t-tt>=2000){
+            tt=t;
+            clockbackground.style.background="url(img/slide"+pindex+".jpg)";
+            clockbackground.style.backgroundSize="600px 600px"
+            pindex=(pindex+1)%3;
+        }
         draw.clearRect(0,0,cw*2,ch*2);
         draw.beginPath();
         draw.lineWidth=3;
